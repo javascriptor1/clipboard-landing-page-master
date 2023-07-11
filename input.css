@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#ios-download {
+  box-shadow: 0 3px 3px 2px #199f8c;
+}
+
+#mac-download {
+  box-shadow: 0 3px 3px 2px #5063e1;
+}
+
+#ios-download:hover {
+  cursor: pointer;
+  background-color: #5dccbb;
+}
+#mac-download:hover {
+  cursor: pointer;
+  background-color: #5063e1a8;
+}
