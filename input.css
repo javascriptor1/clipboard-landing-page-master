@@ -24,3 +24,13 @@ li {
   list-style: none;
   margin-bottom: 1rem;
 }
+li:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+/* This code is necessary to get right color on hover. if this code is removed , the color will NOT change when 
+hovering over letter f in facebook logo for example
+*/
+svg:hover path {
+  fill: hsl(171, 66%, 44%);
+}
