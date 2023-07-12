@@ -26,12 +26,12 @@
     </style>
   </head>
   <body
-    class="grid place-content-center min-h-screen bg-bg-mobile bg-no-repeat bg-contain"
+    class="grid place-content-center min-h-screen bg-bg-mobile bg-no-repeat bg-contain lg:bg-bg-desktop lg:bg-no-repeat lg:bg-contain"
   >
     <!-- ----- Wrapper container here -------------- -->
     <div class="p-6">
       <header
-        class="flex flex-col justify-center items-center text-center my-24"
+        class="flex flex-col justify-center items-center text-center my-24 md:max-w-[550px] md:mx-auto"
       >
         <div class="mb-14">
           <img src="images/logo.svg" alt="Clipboard Logo" />
@@ -44,16 +44,20 @@
           Instantly access your clipboard on all your devices.
         </p>
         <div
-          id="ios-download"
-          class="bg-StrongCyan text-white rounded-full py-3 w-full mb-4"
+          class="flex flex-col lg:flex-row gap-4 w-full justify-center items-center"
         >
-          <a href="#" class="">Download for iOS</a>
-        </div>
-        <div
-          id="mac-download"
-          class="bg-LightBlue text-white rounded-full py-3 w-full"
-        >
-          <a href="">Download for Mac</a>
+          <div
+            id="ios-download"
+            class="bg-StrongCyan text-white rounded-full py-3 px-10"
+          >
+            <a href="#">Download for iOS</a>
+          </div>
+          <div
+            id="mac-download"
+            class="bg-LightBlue text-white rounded-full py-3 px-10"
+          >
+            <a href="">Download for Mac</a>
+          </div>
         </div>
       </header>
       <!-- First section here  -->
@@ -63,38 +67,41 @@
         <h2 class="text-3xl text-DarkGrayishBlue font-semibold mb-4">
           Keep track of your snippets
         </h2>
-        <p class="text-GrayishBlue mb-12">
+        <p class="text-GrayishBlue mb-12 md:max-w-[600px] md:mx-auto">
           Clipboard instantly stores any item you copy in the cloud, meaning you
           can access your snippets immediately on all your devices. Our Mac and
           iOS apps will help you organize everything.
         </p>
-        <div class="mb-12">
-          <img src="images/image-computer.png" alt="computer" />
+        <div class="lg:flex lg:flex-row lg:gap-20">
+          <div class="mb-12 lg:ml-[-20rem]">
+            <img src="images/image-computer.png" alt="computer" />
+          </div>
+          <div class="lg:text-left lg:mt-12 lg:max-w-[350px]">
+            <h3 class="text-2xl text-DarkGrayishBlue font-semibold mb-4">
+              Quick Search
+            </h3>
+            <p class="text-GrayishBlue mb-12">
+              Easily search your snippets by content, category, web address,
+              application, and more.
+            </p>
+            <h3 class="text-2xl text-DarkGrayishBlue font-semibold mb-4">
+              iCloud Sync
+            </h3>
+            <p class="text-GrayishBlue mb-12">
+              Instantly saves and syncs snippets across all your devices.
+            </p>
+            <h3 class="text-2xl text-DarkGrayishBlue font-semibold mb-4">
+              Complete History
+            </h3>
+            <p class="text-GrayishBlue mb-12">
+              Retrieve any snippets from the first moment you started using the
+              app.
+            </p>
+          </div>
         </div>
-        <h3 class="text-2xl text-DarkGrayishBlue font-semibold mb-4">
-          Quick Search
-        </h3>
-        <p class="text-GrayishBlue mb-12">
-          Easily search your snippets by content, category, web address,
-          application, and more.
-        </p>
-
-        <h3 class="text-2xl text-DarkGrayishBlue font-semibold mb-4">
-          iCloud Sync
-        </h3>
-        <p class="text-GrayishBlue mb-12">
-          Instantly saves and syncs snippets across all your devices.
-        </p>
-
-        <h3 class="text-2xl text-DarkGrayishBlue font-semibold mb-4">
-          Complete History
-        </h3>
-        <p class="text-GrayishBlue mb-12">
-          Retrieve any snippets from the first moment you started using the app.
-        </p>
       </section>
       <!-- Second section here  -->
-      <section class="text-center">
+      <section class="text-center flex flex-col justify-center items-center">
         <h2 class="text-3xl text-DarkGrayishBlue font-semibold mb-4">
           Access Clipboard anywhere
         </h2>
@@ -115,7 +122,7 @@
           We’ve got the tools to boost your productivity.
         </p>
         <!-- features div here  -->
-        <div class="flex flex-col justify-center items-center text-center">
+        <div class="flex flex-col lg:flex-row justify-center items-center text-center lg:max-w-[75%]">
           <div class="flex flex-col justify-center items-center text-center">
             <div class="mb-4">
               <img src="images/icon-blacklist.svg" alt="blacklist icon" />
@@ -153,7 +160,7 @@
         </div>
       </section>
       <!-- ------- corp logos here  -->
-      <section class="flex flex-col justify-center items-center gap-10">
+      <section class="flex flex-col lg:flex-row justify-center items-center gap-10 mt-20">
         <img src="images/logo-google.png" alt="Google Logo" /><img
           src="images/logo-ibm.png"
           alt="IBM Logo"
@@ -176,7 +183,7 @@
           Available for free on the App Store. Download for Mac or iOS, sync
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
-        <div class="flex flex-col lg:flex-row gap-4">
+        <div class="flex flex-col lg:flex-row gap-4 w-full justify-center items-center">
           <div
             id="ios-download"
             class="bg-StrongCyan text-white rounded-full py-3 px-10"
