@@ -19,3 +19,8 @@
   cursor: pointer;
   background-color: #5063e1a8;
 }
+
+li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
